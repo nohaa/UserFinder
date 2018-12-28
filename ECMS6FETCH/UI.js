@@ -47,12 +47,12 @@ function showRepos(data){
     let op = '';
     repos.innerHTML = `<h1>Latest Repos</h1>`;
     
-    let rep = data.repos_url; //url of repos 
+    const a = 'created:asc';
+    let rep =`https://api.github.com/users/${data.login}/repos?per_page=5&sort=${a}&client_id=f32faa26950bb00e8e35&client_secret=ffd1991e44153d2f9fcd1133eb8b55213ee3aaab`; //url of repos 
    
     http.get(rep).then((repData)=>{
-        let leng = repData.length;
-        let latest = repData.slice(leng-5,leng);
-        latest.forEach((el)=>{
+        
+        repData.forEach((el)=>{
             op += `
                 <li class="list-group-item py-3">
                 <div class="row">
