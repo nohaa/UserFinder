@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GitHub Finder</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css"/>
+    <style>
+        .badge{
+            font-weight: normal;
+            font-size: 14px;
+        }
+    </style>    
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Github Finder</a>
+        </div>
+            
+    </nav>
+    <div class="container big-container">
+        <div class="card card-body mt-3 search">
+            <h1 class="card-title">Search GitHub Users</h1>
+            <p class="lead">Enter a username to fetch a user profile and repos</p>
+            <input type="text" class="form-control" id="searchBox" placeholder="GitHub username.."/>
+        </div>
+        <div class="profile"></div>
+        <div id="repos">
+            <h1>Latest Repos</h1>
+        </div>
+       
+    </div>
+    <footer class="text-center mt-5 border py-2">GitHub Finder &copy;</footer>
+   
+<script src="ECMS6FETCH/FETCH.js"></script>
+<script src="ECMS6FETCH/UI.js"></script>
+<script src="ECMS6FETCH/plugin.js"></script>
+</body>
+</html>
