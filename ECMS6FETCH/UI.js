@@ -22,10 +22,10 @@ function showData(data){
                     <a href="${data.html_url}" target="_blank" class="btn btn-primary w-100 my-2">View Profile</a>
                 </div>
                 <div class="col-md-9">
-                    <span class="badge badge-primary p-2">Public Repos : ${data.public_repos}</span>
-                    <span class="badge badge-secondary p-2">Public Gists : ${data.public_gists}</span>
-                    <span class="badge badge-success p-2">Followers : ${data.followers}</span>
-                    <span class="badge badge-info p-2">Following : ${data.following}</span>
+                    <span class="badge badge-primary p-2  mt-1">Public Repos : ${data.public_repos}</span>
+                    <span class="badge badge-secondary p-2  mt-1">Public Gists : ${data.public_gists}</span>
+                    <span class="badge badge-success p-2  mt-1">Followers : ${data.followers}</span>
+                    <span class="badge badge-info p-2  mt-1">Following : ${data.following}</span>
                     <br/>
                     <ul class="list-group mt-3 ">
                         <li class="list-group-item ">Company : ${data.company}</li>
