@@ -57,7 +57,7 @@ function showRepos(data){
                 <li class="list-group-item py-3">
                 <div class="row">
                     <div class="col-md-6 pl-3">
-                        <a href="${el.url}" target="_blank">${el.name}</a>
+                        <a href="${el.svn_url}" target="_blank">${el.name}</a>
                     </div> 
                     <div class="col-md-6 pr-3">
                         <span class="badge badge-primary">stars: ${el.stargazers_count}</span>
