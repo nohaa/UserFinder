@@ -7,6 +7,7 @@ function showData(data){
                 document.querySelector('.alert').remove();
             }
             profile.innerHTML  = '';
+            repos.innerHTML = `<h1>Latest Repos</h1>`;
             const divAlert = document.createElement('div');
             divAlert.className = "alert alert-danger mt-2";
             divAlert.appendChild(document.createTextNode('This user not found'));
